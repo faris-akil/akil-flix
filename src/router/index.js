@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Main from "../views/Main.vue"
+import Detail from "../views/Detail.vue"
+import MyList from "../views/MyList.vue"
+
 
 Vue.use(VueRouter)
 
@@ -9,6 +13,21 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: "/Main",
+    name: "Main",
+    component: Main
+  },
+  {
+    path: "/Main/Detail/:id",
+    name: "Detail",
+    component: Detail
+  },
+  {
+    path: "/MyList",
+    name: "MyList",
+    component: MyList
   },
   {
     path: '/about',
